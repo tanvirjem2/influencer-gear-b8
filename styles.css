@@ -51,3 +51,13 @@
         flex-direction: column;
     }
 }
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-title {
+        padding-bottom: 34px;
+    }
+}
