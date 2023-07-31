@@ -93,6 +93,93 @@
     /* border-top: 1px solid #C0CCDA; */
 }
 
+/* popular section */
+
+.cards-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards-title {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    padding-bottom: 30px;
+    /* 250% */
+}
+
+.card-title {
+    color: #18191F;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    padding-top: 16px;
+    padding-bottom: 6px;
+    /* 142.857% */
+}
+
+.card-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    /* 36px */
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.rating-container p {
+    margin-left: 10px;
+    color: #5E6366;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: 0.1px;
+}
+
+p {
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    /* 20.02px */
+    letter-spacing: 0.252px;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 17px 15px 17px 14px;
+}
+
+.popular-btn {
+    text-align: right;
+    padding-top: 50px;
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -147,6 +234,11 @@
 
     .sponsor-container {
         flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .popular-btn {
+        text-align: center;
     }
 }
 
@@ -163,4 +255,14 @@
         padding: 20px;
 
     }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .popular-btn {
+        text-align: center;
+    }
+
 }
